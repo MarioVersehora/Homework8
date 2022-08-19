@@ -29,7 +29,7 @@ public class ShoppingCartControllerTest {
         String request = new String("{ \"type\" : \"ELB\", \"name\" : \"Aragaz\", \"identificationCode\" : \"F123\", \"stock\" : \"20\",\"price\" : \"55\"}");
 
         mockMvc.perform(post("/shoppingCart")
-               .content(request)
+                        .content(request)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 

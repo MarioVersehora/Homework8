@@ -21,7 +21,7 @@ public class ProductService {
 
     public List<ProductDTO> getAllProducts() {
         return productRepository.findAll().stream()
-                .filter(product -> !product.getDeleted() )
+                .filter(product -> !product.getDeleted())
                 .map(productMapper::toProductDTO)
                 .collect(Collectors.toList());
     }
@@ -38,7 +38,7 @@ public class ProductService {
 
     public void deleteProductById(Integer id) {
         Optional<Product> product = productRepository.findById(id);
-        if(product.isPresent()) {
+        if (product.isPresent()) {
             product.get().setDeleted(true);
         }
         productRepository.save(product.get());
