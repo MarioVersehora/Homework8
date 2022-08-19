@@ -2,7 +2,6 @@ package com.example.Homework8;
 
 import com.example.Homework8.model.Product;
 import com.example.Homework8.model.ProductType;
-import com.example.Homework8.model.ShoppingCart;
 import com.example.Homework8.repository.ShoppingCartRepository;
 import com.example.Homework8.service.ShoppingCartService;
 import org.junit.Test;
@@ -12,8 +11,6 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ShoppingCartServiceTest {
