@@ -25,7 +25,7 @@ public class ProductServiceTest {
 
 
     @Test
-    public void when_save_product_it_should_return_product() throws Exception {
+    public void it_should_save_product() throws Exception {
         Product product = new Product(null, ProductType.ELB, "Aragaz", "F123", 50, false, 54);
 
         when(productRepository.save(any(Product.class))).thenReturn(new Product());
