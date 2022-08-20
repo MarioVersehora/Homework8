@@ -32,6 +32,6 @@ public class ShoppingCartServiceTest {
         ShoppingCart shoppingCart = new ShoppingCart(null, listOfProducts);
         shoppingCart.addProduct(product);
 
-        assertThat(shoppingCartService.totalPrice(1)).isEqualTo(product);
+        assertThat(shoppingCartService.totalPrice(1)).isEqualTo(product.getPrice());
     }
 }
